@@ -1,0 +1,31 @@
+.Footer {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.Logo {
+    padding-left: 20px;
+    width: 50vw;
+}
+
+.Text {
+    padding-left: 20px;
+}
+
+.Sns {
+    display: grid;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.Sns a {
+    width: 25px;
+    height: 25px;
+}
+
+.SnsIcon {
+    width: 25px;
+    height: 25px;
+}
+

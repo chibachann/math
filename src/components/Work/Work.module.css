@@ -1,0 +1,49 @@
+.Work {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+}
+
+.Background {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Content {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 100%;
+    display: grid;
+    grid-auto-rows: min-content;
+    place-items: center;
+}
+
+.Title {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Title h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font-family-gothic);
+}
+
+.Title h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.Card {
+    margin: 20px 0;
+    width: 90vw;
+    height: 60vw;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+}

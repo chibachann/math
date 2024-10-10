@@ -1,0 +1,187 @@
+.Top {
+    margin-bottom: 100px;
+    width: 100%;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 3fr 1fr;
+}
+
+
+.Background {
+    align-self: start;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 1s forwards;
+    pointer-events: none;
+}
+
+.TextContent {
+    align-self: end;
+    z-index: 100;
+    width: 80vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    place-items: center;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out 1s forwards;
+}
+
+
+.Title {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    font-family: var(--font-family-gothic);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+.SubTitle {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.AnimeText {
+    height: 180px;
+    width: 180px;
+    display: grid;
+    place-items: center;
+}
+.SurcleText{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.DownArrow{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.ImageContent {
+    z-index: 100;
+    height: 100%;
+    width: 100vw;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+.MainImage {
+    width: 90vw;
+    height: 30vh;
+    object-fit: contain;
+}
+
+.Loading {
+    align-self: start;
+    height: 100svh;
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 1000;
+    display: grid;
+    animation-name: fade-in-out;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.loadingContent {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 90svh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+  }
+  
+  .loadingBackground {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loadingImage {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: min(50vw, 300px);
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .loadingImage:first-child {
+    animation: growFromBottom 1s ease-in-out;
+  }
+  
+  .loadingImage:last-child {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  }
+  
+  @keyframes growFromBottom {
+    0% {
+      transform:translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

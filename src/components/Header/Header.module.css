@@ -1,0 +1,29 @@
+.Header {
+    position: fixed;
+    display: grid;
+    height: 15vw;
+    z-index: 1000;
+}
+
+.Logo {
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
+    animation: fadein 2s ease-in-out 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Logo img {
+    height: 60px;
+    width: 30vw;
+    object-fit: contain;
+}

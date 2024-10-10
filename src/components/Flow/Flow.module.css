@@ -1,0 +1,13 @@
+.Flow {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Background {
+    align-self: start;
+    height: 100vh;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    object-fit: contain;
+}
